@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djangobower',
 ]
 
 # 3rd party
@@ -135,6 +136,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'npm.finders.NpmFinder',
     'compressor.finders.CompressorFinder',
+    'djangobower.finders.BowerFinder',
 )
 COMPRESS_PRECOMPILERS = (
     ('text/scss', 'node_modules/node-sass/bin/node-sass {infile} {outfile}'),
