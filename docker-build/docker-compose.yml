@@ -8,6 +8,8 @@ services:
     volumes:
       - ../:/usr/src/app/
       - /usr/src/app/node_modules/
+    environment:
+      BOWER_COMPONENTS_ROOT: '/usr/src/app/node_modules/components/'
 
   server:
     extends:
